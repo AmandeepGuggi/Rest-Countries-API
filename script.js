@@ -15,7 +15,7 @@ fetch('https://restcountries.com/v3.1/all')
 .then((data) => {
     renderCountries(data)
     allCountriesData = data
-    // console.log(allCountriesData.map((country)=> console.log(country)));
+  
 })
 
 filterByRegion.addEventListener('change',(e) => {
@@ -41,7 +41,7 @@ function renderCountries(data){
         
         const countryCard = document.createElement("a");
 countryCard.classList.add("country");
-countryCard.href = `/country.html?name=${country.name.common}`
+countryCard.href = `country.html?name=${country.name.common}`
 countryCard.innerHTML = `
 <img src='${country.flags.svg}' alt="flag">
                 <div class="country-text">
