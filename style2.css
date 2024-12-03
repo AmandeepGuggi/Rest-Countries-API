@@ -1,0 +1,75 @@
+.back-btn{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    gap: .3rem;
+    font-size: 20px;
+    border-radius: .4rem;
+    padding: .3rem 1rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.281);
+    transition: all 200ms ease-in-out;
+    border: none;
+    cursor: pointer;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+}
+.back-btn:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.281);
+    background-color: #fff;
+}
+.border-countries a{
+    background-color: #fff;
+}
+main.dark .back-btn, main.dark .border-countries a{
+    background-color:hsl(209, 23%, 22%);
+    color: white;
+}
+.country-detail{
+    display: flex;
+    justify-content: space-around;
+   margin: 3rem 0;
+ gap: 1rem;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main{
+    padding: 2rem;
+    min-height: 100vh;
+}
+@media (max-width: 600px){
+.country-detail{
+flex-direction: column;
+justify-content: center;
+}
+.flex{
+flex-direction: column;
+}
+}
+.country-image{
+max-width: 50%;
+}
+.country-image img{
+    width: 100%;
+    min-width: 200px;
+}
+.flex{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: .9rem 0 2rem 0;
+}
+.flex div p{
+    line-height: 2rem;
+    margin: .8rem 0;
+}
+.border-countries a{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;   
+    display: inline-block;
+    margin: .5rem 1rem;
+    padding: 6px 24px;
+    border-radius: 4px;
+}

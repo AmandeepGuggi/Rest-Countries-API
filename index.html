@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Worlds API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <header class="header-container">
+       <div class="header">
+        <h2 class="title"><a href="/index.html">Where in the world</a></h2>
+        <p class="dark-mode"><i id="sun-moon" class="fa-regular fa-moon"></i> <span>&nbsp;DarkMode</span></p>
+       </div>
+    </header>
+    <main>
+        <div class="search-field">
+            <input class="search-input" type="text" placeholder="Search Country name">
+            <select class="filter-by-region" name="country" id="">
+                <option hidden>Filter by region</option>
+                <option value="Asia">Asia</option>
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Europe">Europe</option>
+                
+            </select>
+        </div>
+
+        <div class="countries-container">
+          
+        </div>
+    </main>
+</body>
+</html>
